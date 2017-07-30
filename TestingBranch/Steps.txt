@@ -1,0 +1,119 @@
+Step 1:
+
+Create the Hub Repository : https://github.com/SukumarMS/Python-github -- Centralized Repo
+
+Step 2:
+
+sukum@DESKTOP-PT8U4LC MINGW64 ~/Desktop/Python
+$ git init
+Initialized empty Git repository in C:/Users/sukum/Desktop/Python/.git/
+
+C:\Users\sukum\Desktop\Python\.git -- Local Repo
+
+Step 3 : Create Orgin
+
+sukum@DESKTOP-PT8U4LC MINGW64 ~/Desktop/Python (master)
+$ git remote add origin "https://github.com/SukumarMS/Python-github.git"
+
+Step 4: Pull the master to local
+
+sukum@DESKTOP-PT8U4LC MINGW64 ~/Desktop/PythonGit (master)
+$ git pull origin master
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/SukumarMS/Python-github
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+
+Step 5 :
+
+sukum@DESKTOP-PT8U4LC MINGW64 ~/Desktop/PythonGit (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Sukumar/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Step 6 :
+
+sukum@DESKTOP-PT8U4LC MINGW64 ~/Desktop/PythonGit (master)
+$ git add Sukumar/
+
+sukum@DESKTOP-PT8U4LC MINGW64 ~/Desktop/PythonGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Sukumar/.idea/Desktop.iml
+        new file:   Sukumar/.idea/misc.xml
+        new file:   Sukumar/.idea/modules.xml
+        new file:   Sukumar/.idea/workspace.xml
+        new file:   Sukumar/Data.py
+        new file:   Sukumar/WebAppOne.py
+        new file:   Sukumar/__pycache__/Data.cpython-36.pyc
+        new file:   Sukumar/templates/about.html
+        new file:   Sukumar/templates/dashboard.html
+        new file:   Sukumar/templates/home.html
+        new file:   Sukumar/templates/includes/form_helper.html
+        new file:   Sukumar/templates/includes/messages.html
+        new file:   Sukumar/templates/includes/nav_bar.html
+        new file:   Sukumar/templates/layout.html
+        new file:   Sukumar/templates/login.html
+        new file:   Sukumar/templates/register.html
+
+Step 7 :
+
+$ git commit -m  "First Commit"
+[master 6d860bc] First Commit
+ 16 files changed, 705 insertions(+)
+ create mode 100644 Sukumar/.idea/Desktop.iml
+ create mode 100644 Sukumar/.idea/misc.xml
+ create mode 100644 Sukumar/.idea/modules.xml
+ create mode 100644 Sukumar/.idea/workspace.xml
+ create mode 100644 Sukumar/Data.py
+ create mode 100644 Sukumar/WebAppOne.py
+ create mode 100644 Sukumar/__pycache__/Data.cpython-36.pyc
+ create mode 100644 Sukumar/templates/about.html
+ create mode 100644 Sukumar/templates/dashboard.html
+ create mode 100644 Sukumar/templates/home.html
+ create mode 100644 Sukumar/templates/includes/form_helper.html
+ create mode 100644 Sukumar/templates/includes/messages.html
+ create mode 100644 Sukumar/templates/includes/nav_bar.html
+ create mode 100644 Sukumar/templates/layout.html
+ create mode 100644 Sukumar/templates/login.html
+ create mode 100644 Sukumar/templates/register.html
+
+Step 8 : Branching
+
+sukum@DESKTOP-PT8U4LC MINGW64 ~/Desktop/PythonGit (master)
+$ git branch firstbranch
+
+sukum@DESKTOP-PT8U4LC MINGW64 ~/Desktop/PythonGit (master)
+$ git checkout firstbranch
+Switched to branch 'firstbranch'
+
+sukum@DESKTOP-PT8U4LC MINGW64 ~/Desktop/PythonGit (firstbranch)
+$ git add Shruthi/
+
+sukum@DESKTOP-PT8U4LC MINGW64 ~/Desktop/PythonGit (firstbranch)
+$ git status
+On branch firstbranch
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Shruthi/sam.html
+
+
+sukum@DESKTOP-PT8U4LC MINGW64 ~/Desktop/PythonGit (firstbranch)
+$ git commit -m  "Including Alien"
+[firstbranch b838621] Including Alien
+ 1 file changed, 3 insertions(+)
+ create mode 100644 Shruthi/sam.html
+
